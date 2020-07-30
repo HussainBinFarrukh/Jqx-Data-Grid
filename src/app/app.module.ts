@@ -1,18 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { NgModule }   from '@angular/core';  
+import { BrowserModule } from '@angular/platform-browser';  
+import { jqxGridModule } from 'jqwidgets-ng/jqxgrid';
+import { AppComponent }     from './app.component';  
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
+@NgModule({  
+  declarations: [ AppComponent ],  
+  imports: [ 
+    BrowserModule, 
+    jqxGridModule,
     AppRoutingModule
-  ],
+  ],  
   providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  bootstrap: [ AppComponent ]  
+})  
+
+export class AppModule {}  
